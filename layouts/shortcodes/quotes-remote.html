@@ -1,0 +1,6 @@
+{{ range getJSON "https://programming-quotes-api.herokuapp.com/Quotes?count=10" }}
+<div>
+  <p>{{.en}}</p>
+  <p>{{.author}}</p>
+</div>
+{{end}}
